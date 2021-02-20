@@ -1,0 +1,16 @@
+{
+  "name": "guia-clases",
+  "version": "1.0.0",
+  "description": "Primer proyecto de guia de clases",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://micaelaisla@bitbucket.org/micaelaisla/guia-clases.git"
+  },
+  "author": "Micaela Isla",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/micaelaisla/guia-clases#readme"
+}
