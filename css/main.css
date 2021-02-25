@@ -12,13 +12,15 @@ footer {
 }
 
 .card-hotel {
-	flex: 1, 150px;
-	padding: 2px 7px 2px 7px;
+	flex: 1, 200 px;
+	padding: 2px 0px 2px 0px;
 	margin-top: 10px;
 }
 
 .btn-reserva {
 	width: 100%
+	
+
 
 }
 
@@ -26,3 +28,7 @@ footer {
 	padding-right: 10px;
 }
 
+.card-img-top{
+  width:10%;
+  height: 10;
+}
