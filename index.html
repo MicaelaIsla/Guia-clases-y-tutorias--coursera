@@ -7,11 +7,7 @@
     <link rel= "stylesheet"  href= "css/main.css">
     <link rel= "stylesheet"  href= "node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script> 
 
-     <script src="node_modules/popper.js/dist/popper.min.js"></script> 
-
-     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
 
     <title>Guía de Clases y Tutorias</title>
   </head>
@@ -43,21 +39,35 @@
 	</ol>
 </nav>
 
-        <div class= "row" >
-          <div class= "col-sm-4">
+<script src="node_modules/jquery/dist/jquery.min.js"></script> 
+
+     <script src="node_modules/popper.js/dist/popper.min.js"></script> 
+
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+
+
+<div class="row">
+	<div class="col-sm-4">
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-controls="multiCollapse1"> ¿Cómo funciona?</button>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tematica" aria-controls="multiCollapse2"> ¿Cúal es la tematica?</button>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-controls="multiCollapse3"> ¿Cómo pago?</button>
+</div>
+</div>
+        <div class= "row " >
+          <div class= "col-sm-4 collapse multi-collapse" id="funciona">
             <p>
               <h3>¿Cómo funciona?</h3>
               <p> Se dictaran talleres mediante la Plataforma Meet todos los lunes. </p>
-            </p>
+            
         </div>
-       <div class= "col-sm-4">
+        <div class= "col-sm-4 collapse multi-collapse" id="tematica">
             <p>
               <h3>¿Cúal es la tematica?</h3>
               <p> Todos los lunes se dictará un taller distinto relacionado a la Esi. </p>
-            </p>
+          
           </div>
 
-          <div class= "col-sm-4">
+           <div class= "col-sm-4 collapse multi-collapse" id="pago">
             <p>
               <h3>¿Cómo pago?</h3>
               <p> Mediante Mercado Pago o cualquier tarjeta de débito</p>
