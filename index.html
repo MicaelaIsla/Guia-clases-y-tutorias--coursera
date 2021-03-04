@@ -44,6 +44,7 @@
      <script src="node_modules/popper.js/dist/popper.min.js"></script> 
 
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"> </script>
 
 
 <div class="row">
@@ -82,40 +83,37 @@
     <div class="card card-hotel d-flex flex-column justify-content-beetween ml-2">
     
     <div class="card-body">
-      <h5 class="card-title"> Herramientas para la implementación de la ESI </h5>
+      <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Los primeros 10 en reservar tendran material adicional"> Herramientas para la implementación de la ESI </h5>
       <img class="card-img-top" src="images/esiesi.png" alt="esi img">
 
 	<h6 class="card-subtitle text-muted"> Prof. Natalia I.  </h6>
     <p class="card-text">  Se charlarán todas las tematicas relacionadas al abordaje de la ESI</p>
     </div>
-    <div> <button class="btn btn-primary btn-reserva"> 
-    	<span class="oi oi-plus"> </span> Reservar
+    <div>  <button class="btn btn-primary btn-lg btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Reservar</button>
     </div>
     </div>
 
      <div class="card card-hotel d-flex flex-column justify-content-beetween ml-2">
     
     <div class="card-body">
-      <h5 class="card-title"> Violencia de género  </h5>
+      <h5 class="card-title" data-toggle="tooltip" data-placement="top" title=" El curso cuenta con material complementario "> Violencia de género  </h5>
       <img class="card-img-top" src="images/esiesi.png" alt="esi img"  >
 	<h6 class="card-subtitle text-muted"> Prof. Natalia I.  </h6>
     <p class="card-text">  Como identificarlos y donde pedir ayuda</p>
     </div>
-    <button class="btn btn-primary btn-reserva"> 
-    	<span class="oi oi-plus"> </span> Reservar 
+     <button class="btn btn-primary btn-lg btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Reservar</button> 
    </div>
     </div>
    
      <div class="card card-hotel d-flex flex-column justify-content-beetween ml-2">
     
     <div class="card-body">
-      <h5 class="card-title"> ESI en las escuelas </h5>
+      <h5 class="card-title" data-toggle="popoover"  data-content=" El curso cuenta con material didáctico para tus clases"> ESI en las escuelas </h5>
       <img class="card-img-top" src="images/esiesi.png" alt="esi img">
 	<h6 class="card-subtitle text-muted"> Prof. Natalia I.  </h6>
     <p class="card-text">  Se charlarán todas las tematicas relacionadas al abordaje de la ESI</p>
     </div>
-    <button class="btn btn-primary btn-reserva"> 
-    	<span class="oi oi-plus"> </span> Reservar 
+     <button class="btn btn-primary btn-lg btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Reservar</button>
 
   </div>
     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Consultar</button>
@@ -181,5 +179,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"> </script>
+
+   <script>
+   	$(function (){
+   	$("[data-toggle='tooltip']").tooltip();
+
+   	   $("[data-toggle='popover']").popover();
+   	   	});
+   	   </script>
   </body>
 </html>
