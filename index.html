@@ -142,7 +142,7 @@
      <button class="btn btn-primary btn-lg btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Reservar</button>
 
   </div>
-    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Consultar</button>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto</button>
   </div> 
   </div>
 </div>
@@ -210,13 +210,29 @@
    <script>
    	$(function (){
    	$("[data-toggle='tooltip']").tooltip();
-
-   	   $("[data-toggle='popover']").popover();
-   	   	});
-
-   	$('.carousel').carousel ({
+    $("[data-toggle='popover']").popover();
+    $('.carousel').carousel ({
    		interval:1000
    		});
+
+$('#contacto').on('show.bs.modal', function (e){
+	console.log('el modal contacto se esta mostrando');
+	$('#contactoBtn').removeClass('btn-outline-success');
+	$('#contactoBtn').addClass('btn-primary');
+	$('#contactoBtn').prop('disabled', true);
+});
+
+$('#contacto').on('shown.bs.modal', function (e){
+	console.log('el modal contacto se mostró');
+});
+$('#contacto').on('hidde.bs.modal', function (e){
+	console.log('el modal contacto se oculta');
+});
+$('#contacto').on('hidden.bs.modal', function (e){
+	console.log('el modal contacto se ocultó');
+	$('#contactoBtn').prop('disabled', false);
+});
+});
    	   </script>
    	}
   </body>
