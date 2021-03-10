@@ -5,7 +5,17 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+
+    "watch:scss":"onchange \"css/*.scss\" -- npm run scss",
+     
+"scss": "node-sass -o css/ css/",
+    "watch:scss":"onchange 'css/*.css' -- npm run scss"
+
+
+
+
   },
   "repository": {
     "type": "git",
@@ -15,12 +25,14 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/micaelaisla/guia-clases#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^5.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+     "node-sass":"^5.0.0"
   }
 }

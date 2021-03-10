@@ -1,11 +1,11 @@
 
 .jumbotron {
-  background-color: #7fffd4 ;
+  background-color: $yellow ;
   color: black;
 }
 footer {
     padding: 10px 10px 0 10px;
-    background-color: #C8A2C8;
+    background-color: $yellow;
     color: black;
     margin-bottom: 0px;
     margin-top: 10px
@@ -19,9 +19,10 @@ footer {
 
 .btn-reserva {
 	width: 100%
-	
+	}
 
-
+.tab-content :{
+	padding-top: 10px;
 }
 
 .footer address-icon{
@@ -40,9 +41,6 @@ footer {
   height: 450px;
 }
 
-.tab-content :{
-	padding-top: 10px;
-}
 
 
 .img-fluid {
