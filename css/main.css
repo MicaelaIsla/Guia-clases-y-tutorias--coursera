@@ -1,15 +1,16 @@
-
 .jumbotron {
-  background-color: $yellow ;
-  color: black;
-}
-footer {
-    padding: 10px 10px 0 10px;
-    background-color: $yellow;
+    background-color: aquamarine;
     color: black;
-    margin-bottom: 0px;
-    margin-top: 10px
+
 }
+
+
+footer {
+padding: 10px, 10px, 0, 0px;
+background-color: coral;
+margin-top: 0px;
+}
+
 
 .card-hotel {
 	flex: 1, 200 px;
